@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Task = () => {
+const Task = ({id , title}) => {
   return (
     <div className="shadow-sm shadow-sky-100 grid grid-cols-12 bg-slate-100 p-5">
-      <div className="col-span-1">1</div>
-      <div className="col-span-9">do somthing with ...</div>
+      <div className="col-span-1">{id}</div>
+      <div className="col-span-9">{title}</div>
       <div className="col-span-2 flex items-center justify-center gap-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"

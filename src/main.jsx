@@ -10,6 +10,10 @@ import ErrorPage from './pages/ErrorPage'
 import DetailsPage from './pages/DetailsPage'
 import { Provider } from 'react-redux'
 import store from './redux/store/store'
+
+
+
+
 const router = createBrowserRouter([
   {
     path: "/",
