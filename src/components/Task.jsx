@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Task = ({id , title}) => {
+const Task = ({ id, title, deleteTask }) => {
   return (
     <div className="shadow-sm shadow-sky-100 grid grid-cols-12 bg-slate-100 p-5">
       <div className="col-span-1">{id}</div>
@@ -12,6 +12,9 @@ const Task = ({id , title}) => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
+          onClick={() => {
+            deleteTask(id);
+          }}
           className="w-6 h-6 stroke-red-500 hover:fill-red-500 hover:stroke-black duration-100 cursor-pointer"
         >
           <path
@@ -37,6 +40,6 @@ const Task = ({id , title}) => {
       </div>
     </div>
   );
-}
+};
 
 export default Task
