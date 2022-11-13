@@ -64,7 +64,7 @@ const tasksSlice = createSlice({
       })
       .addCase(deletetasks.fulfilled, (state, action) => {
         state.loading = false;
-        state.data = console.log(action)
+        state.data = action.payload
       })
       .addCase(deletetasks.rejected, (state, action) => {
         state.loading = false;
